@@ -8,26 +8,27 @@ console.log(sentence);
 
 // // The addExcitement function should accept the array as the sole argument
 
-// function addExcitement (theWordArray) {
+function addExcitement (theWordArray) {
     	
     	let outputSentence = "";
 
-    for (let i = 0; i < sentence.length; i++) {
+    for (let i = 0; i < theWordArray.length; i++) {
 
     	if (i === 0) {
-    		outputSentence = sentence[i];
+    		outputSentence = theWordArray[i];
     	} else if ( ([i] + 1) % 3 === 0 ) {
-    		outputSentence = outputSentence + " " + sentence[i] + "!";
+    		outputSentence = outputSentence + " " + theWordArray[i] + "!";
     	} else {
-    		outputSentence = outputSentence + " " + sentence[i];
+    		outputSentence = outputSentence + " " + theWordArray[i];
     	}
 
     	console.log(outputSentence);
 
     }
 
-// }
+}
 
+addExcitement(sentence);
 
 
 //       Write a `for` loop that iterates over the array argument and
